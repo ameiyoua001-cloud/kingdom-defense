@@ -1,0 +1,44 @@
+{
+  "towers": [
+    {
+      "id": "arrow",
+      "name": "猎鹰箭塔",
+      "description": "射速快、造价低，擅长对付轻甲敌人",
+      "levels": [
+        { "cost": 70, "attack": { "damage": 8, "damageKind": "physical", "fireRate": 0.7, "range": 170, "projectileSpeed": 460 } },
+        { "cost": 110, "attack": { "damage": 14, "damageKind": "physical", "fireRate": 0.6, "range": 190, "projectileSpeed": 500 } },
+        { "cost": 160, "attack": { "damage": 22, "damageKind": "physical", "fireRate": 0.5, "range": 210, "projectileSpeed": 540 } }
+      ]
+    },
+    {
+      "id": "mage",
+      "name": "秘法水晶塔",
+      "description": "魔法伤害无视护甲，克制重甲敌人",
+      "levels": [
+        { "cost": 100, "attack": { "damage": 20, "damageKind": "magic", "fireRate": 1.3, "range": 160, "projectileSpeed": 380 } },
+        { "cost": 160, "attack": { "damage": 36, "damageKind": "magic", "fireRate": 1.2, "range": 175, "projectileSpeed": 400 } },
+        { "cost": 230, "attack": { "damage": 56, "damageKind": "magic", "fireRate": 1.1, "range": 190, "projectileSpeed": 420 } }
+      ]
+    },
+    {
+      "id": "cannon",
+      "name": "矮人火炮",
+      "description": "攻速慢但范围溅射，克制成群敌人",
+      "levels": [
+        { "cost": 125, "attack": { "damage": 26, "damageKind": "explosive", "fireRate": 2.2, "range": 150, "projectileSpeed": 270, "splash": 60 } },
+        { "cost": 190, "attack": { "damage": 44, "damageKind": "explosive", "fireRate": 2.1, "range": 165, "projectileSpeed": 290, "splash": 70 } },
+        { "cost": 260, "attack": { "damage": 68, "damageKind": "explosive", "fireRate": 2.0, "range": 180, "projectileSpeed": 310, "splash": 85 } }
+      ]
+    },
+    {
+      "id": "barracks",
+      "name": "王国兵营",
+      "description": "派出士兵在路上拦截敌人，可设置集结点",
+      "levels": [
+        { "cost": 70, "barracks": { "soldierHp": 60, "soldierDamage": 6, "soldierAttackRate": 0.9, "soldierRespawn": 8, "soldierCount": 3, "rallyRadius": 150 } },
+        { "cost": 110, "barracks": { "soldierHp": 100, "soldierDamage": 10, "soldierAttackRate": 0.85, "soldierRespawn": 8, "soldierCount": 3, "rallyRadius": 165 } },
+        { "cost": 160, "barracks": { "soldierHp": 150, "soldierDamage": 15, "soldierAttackRate": 0.8, "soldierRespawn": 7, "soldierCount": 3, "rallyRadius": 180 } }
+      ]
+    }
+  ]
+}

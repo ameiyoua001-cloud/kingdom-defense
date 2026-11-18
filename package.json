@@ -1,0 +1,22 @@
+{
+  "name": "kingdom-defense-the-last-castle",
+  "private": true,
+  "version": "0.1.0",
+  "description": "王国防线：最后的城堡 —— 中世纪奇幻路线塔防网页游戏（第一阶段）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
+  }
+}

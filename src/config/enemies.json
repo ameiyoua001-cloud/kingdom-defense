@@ -1,0 +1,43 @@
+{
+  "enemies": [
+    {
+      "id": "goblin",
+      "name": "哥布林掠夺者",
+      "hp": 55,
+      "speed": 55,
+      "armor": 0,
+      "magicResist": 0,
+      "bounty": 6,
+      "livesCost": 1,
+      "damage": 6,
+      "attackRate": 1.0,
+      "scale": 1.0
+    },
+    {
+      "id": "wolf",
+      "name": "恐狼",
+      "hp": 42,
+      "speed": 105,
+      "armor": 0,
+      "magicResist": 0.2,
+      "bounty": 8,
+      "livesCost": 1,
+      "damage": 9,
+      "attackRate": 0.8,
+      "scale": 1.0
+    },
+    {
+      "id": "ogre",
+      "name": "食人魔重锤兵",
+      "hp": 340,
+      "speed": 32,
+      "armor": 0.35,
+      "magicResist": 0,
+      "bounty": 25,
+      "livesCost": 2,
+      "damage": 18,
+      "attackRate": 1.6,
+      "scale": 1.0
+    }
+  ]
+}

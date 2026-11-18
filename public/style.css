@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #14100c;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+#game-container {
+  width: 100%;
+  height: 100%;
+  /* 手机安全区域（刘海屏） */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+#game-container canvas {
+  display: block;
+  outline: none;
+}
+
+/* 竖屏旋转提示 */
+#rotate-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: radial-gradient(circle at 50% 35%, #2c2118 0%, #14100c 75%);
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate-card {
+  text-align: center;
+  color: #f2e3c2;
+}
+
+.rotate-card p {
+  margin-top: 26px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.rotate-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #b99b6b;
+}
+
+.rotate-phone {
+  width: 52px;
+  height: 92px;
+  margin: 0 auto;
+  border: 4px solid #f4c542;
+  border-radius: 12px;
+  position: relative;
+  animation: rotate-hint 1.8s ease-in-out infinite;
+}
+
+.rotate-phone::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background: #f4c542;
+}
+
+@keyframes rotate-hint {
+  0%,
+  20% {
+    transform: rotate(0deg);
+  }
+  60%,
+  100% {
+    transform: rotate(90deg);
+  }
+}
