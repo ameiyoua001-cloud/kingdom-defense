@@ -2,6 +2,8 @@
 
 **Kingdom Defense: The Last Castle** —— 原创中世纪奇幻风格的 2D 路线塔防网页游戏。
 
+**在线试玩**：<https://ameiyoua001-cloud.github.io/kingdom-defense/>（GitHub Pages 自动发布，推送 main 分支即更新）
+
 参考 Kingdom Rush 的经典玩法框架（路线行进、固定塔位、兵营拦截、波次召唤），但所有角色、地图、贴图、音效与 UI 均为本项目原创：贴图全部由代码程序化绘制，音效由 WebAudio 即时合成，不含任何第三方受版权保护素材。
 
 ## 技术栈
